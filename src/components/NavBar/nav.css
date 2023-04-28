@@ -1,0 +1,46 @@
+/* Define o menu superior */
+.nav {
+    background-color: black;
+    margin-top: -20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+/* Remove o sublinhado dos links */
+a {
+    text-decoration: none;
+}
+/* Nome/Logo da empresa */
+.item1 {
+    position: relative;
+    color: #ffffff;
+    top: 20px;
+    font-weight: bold;
+    left: 10px;
+}
+/* Link para formulario de solicitação de orçamento */
+.item2 {
+    position: relative;
+    color: #ffffff;
+    top: 20px;
+    font-weight: bold;
+    left: 830px;
+  
+}
+/* imagem do carrinho */
+.item3 {
+    position: relative;
+    color: #ffffff;
+    top: 10px;
+    font-weight: bold;
+    left: 870px;
+}
+/* Texto: Carrinho */
+.cart {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 12px ;
+    left: 870px;
+    top: -20px
+}
