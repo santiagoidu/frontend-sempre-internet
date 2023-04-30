@@ -1,41 +1,38 @@
-import React, { useState } from 'react'
-import Modal from 'react-modal'
+import './styles.css'
 
-import './cart.css'
+import PageHeader from '../../layout/PageHeader';
+import PageTitle from '../../layout/PageTitle';
+import Summary from './Summary';
+import TableRow from './TableRow';
 
-//Modal.setAppElement('#root')
-
-export default function Cart() {
-    const [modalIsOpen, setIsOpen] = useState(false)
-
-    function handleOpenModal() {
-        setIsOpen(true)
-    }
-    function handleCloseModal(){
-        setIsOpen(false)
-    }
-    const custonStyles = {
-        content: {
-            top: '10%',
-            left: '60%',
-            right: '15%',
-            botton: 'auto',
-            marginRight:'-10%',
-            border: '10px solid #000'
-        }
-    }
+export default function Carrinho() {
   return (
-    <div>
-       <button className='modal-button cart' onClick={handleOpenModal}>Carrinho</button>
-       <Modal
-       isOpen={modalIsOpen}
-       onRequestClose={handleCloseModal}
-        style={custonStyles}
-       >
-        <div className='nameCart'>
-            <h1>Carrinho</h1>
+    <>
+      <PageHeader />
+      <main className='main1'>
+        <PageTitle data={'Seu carrinho'} />
+        <div className='content'>
+          <section className='section1'>
+            <table>
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>Quantidade</th>
+                  <th>Total</th>
+                  <th>-</th>
+                </tr>
+              </thead>
+              <tbody>
+                <TableRow />
+              </tbody>
+            </table>
+          </section>
+          <aside className='aside1'>
+            <Summary />
+          </aside>
         </div>
-       </Modal>
-    </div>
+      </main>
+    </>
   );
 }
