@@ -16,6 +16,28 @@
 	 display: flex !important;
 	 justify-content: center !important;
 }
+
+.header2 {
+	background: #111 !important;
+	color: white !important;
+	font-size: 24px !important;
+	padding: 20px 0 !important;
+	display: flex !important;
+	justify-content: start !important;
+}
+.iconCart {
+    color: #ffffff;
+    top: 10px;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+	
+}
+
+.aIcon {
+	margin-left: 80%;
+}
+
  .main1 {
 	 background: #fff;
 	 padding: 0 30px 30px;

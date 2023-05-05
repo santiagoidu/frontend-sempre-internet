@@ -5,6 +5,7 @@
     width: 100%;
     height: 70px;
     display: flex;
+    position: relative;
 }
 /* Remove o sublinhado dos links */
 a {
@@ -26,21 +27,4 @@ a {
     font-weight: bold;
     left: 830px;
   
-}
-/* imagem do carrinho */
-.item3 {
-    position: relative;
-    color: #ffffff;
-    top: 10px;
-    font-weight: bold;
-    left: 870px;
-}
-/* Texto: Carrinho */
-.cart {
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 12px ;
-    left: 870px;
-    top: 14px
 }

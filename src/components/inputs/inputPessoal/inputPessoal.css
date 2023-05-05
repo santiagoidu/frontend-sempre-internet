@@ -1,0 +1,29 @@
+.nomeRazao {
+    width: 775px;
+    position: relative;
+    left: 15px;
+}
+.telefone {
+    position: relative;
+    left: 15px;
+    top: 10px;
+}
+
+.telefone2 {
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+.email {
+    position: relative;
+    left: 35px;
+    top: 10px;
+}
+
+.cpfCnpj {
+    position: relative;
+    left: 40px;
+    top: 10px;
+    width: 173px;
+}
