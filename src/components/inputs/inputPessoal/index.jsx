@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import './inputPessoal.css'
 
 
-function FichaCadastral() {
+function InputPessoal() {
     return (
         <>
             <div className='DadosPessoais'>
@@ -18,6 +18,6 @@ function FichaCadastral() {
     );
 }
 
-export default FichaCadastral;
+export default InputPessoal;
 
 

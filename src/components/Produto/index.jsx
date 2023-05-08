@@ -1,50 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './produtoHome.css'
+import ProdutoServico from './produto';
+import { api } from '../../api'
 
 function ProdutoHome() {
+
+  const [cart, setCart] = useState([])
+
+  const fetchData = async () => {
+    const { data } = await api.get('/product')
+    setCart(data)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
   return (
-    <>
-    <div className='productHome'>
-        <div className='borderImg'>
-          <img src='https://sempreinternet.com.br/wp-content/uploads/2021/04/sempre.png' className='imgLogo' alt='' />
-          </div>
-          <div className='info'>
-            <div className='name'>Pacote 40gb de Internet</div>
-            <div className='price'>R$40</div>
-            <button className='add'>Adcionar no carrinho</button>
-          </div>
-        </div>
-        <div className='productHome2'>
-        <div className='borderImg'>
-          <img src='https://sempreinternet.com.br/wp-content/uploads/2021/04/sempre.png' className='imgLogo' alt='' />
-          </div>
-          <div className='info'>
-            <div className='name'>Pacote 40gb de Internet</div>
-            <div className='price'>R$40</div>
-            <button className='add'>Adcionar no carrinho</button>
-          </div>
-        </div>
-        <div className='productHome3'>
-        <div className='borderImg'>
-          <img src='https://sempreinternet.com.br/wp-content/uploads/2021/04/sempre.png' className='imgLogo' alt='' />
-          </div>
-          <div className='info'>
-            <div className='name'>Pacote 40gb de Internet</div>
-            <div className='price'>R$40</div>
-            <button className='add'>Adcionar no carrinho</button>
-          </div>
-        </div>
-        <div className='productHome4'>
-        <div className='borderImg'>
-          <img src='https://sempreinternet.com.br/wp-content/uploads/2021/04/sempre.png' className='imgLogo' alt='' />
-          </div>
-          <div className='info'>
-            <div className='name'>Pacote 40gb de Internet</div>
-            <div className='price'>R$40</div>
-            <button className='add'>Adcionar no carrinho</button>
-          </div>
-        </div>
-    </>
+    <div className='productsContainer'>
+    {cart.map((props) => <div className='productHome'>
+        <ProdutoServico {... props} />
+      </div>)}
+    </div>
   );
 }
 

@@ -9,7 +9,7 @@ import { api } from '../../api';
 
 export default function Carrinho() {
 
-  const [cart, setCart] = useState([])
+ const [cart, setCart] = useState([])
 
   const fetchData = () => {
     api.get('/product').then((data) => {console.log('test',data.data)})
@@ -37,9 +37,10 @@ export default function Carrinho() {
                 </tr>
               </thead>
               <tbody>
-                {cart.map( (itens) => {
-                <TableRow />
+                 {cart.map( (itens) => {
+                return <TableRow {... itens} />
                 })}
+                
                 {cart.length === 0 && (
                 <tr>
                   <td colSpan='5' style={{textAlign: 'center'}} >
