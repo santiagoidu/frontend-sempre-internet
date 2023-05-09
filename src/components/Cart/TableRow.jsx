@@ -1,19 +1,19 @@
 import React from 'react';
 
 import './produto.css'
-const TableRow = ({name, value}) => {
+const TableRow = ({produto, preco}) => {
   return (
     <tr>
       <td>
         <div className='product'>
           <img src='https://sempreinternet.com.br/wp-content/uploads/2021/04/sempre.png' className='imgProduto' alt='' />
           <div className='info'>
-            <div className='name'>{name}</div>
+            <div className='name'>{produto}</div>
             <div className='category'>Internet</div>
           </div>
         </div>
       </td>
-      <td>R${value}</td>
+      <td>{preco}</td>
       <td>
         <div className='qty'>
           <button>

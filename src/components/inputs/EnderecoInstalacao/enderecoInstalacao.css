@@ -1,0 +1,47 @@
+.cep {
+    position: relative;
+    left: 15px;
+    top: 10px;
+}
+.rua {
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+.numero {
+    position: relative;
+    left: 35px;
+    top: 10px;
+}
+
+.complemento {
+    position: relative;
+    left: 40px;
+    top: 10px;
+    width: 173px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bairro {
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+.cidade {
+    position: relative;
+    left: 25px;
+    top: 20px;
+}
+
+.uf {
+    position: relative;
+    left: 35px;
+    top: 20px;
+} 

@@ -45,3 +45,19 @@
 .description {
     margin-top: 10px;
 }
+
+.button {
+    width: 450px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #FFF;
+    font-size: 20pt;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}

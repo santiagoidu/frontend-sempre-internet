@@ -13,8 +13,11 @@ function FichaCadastral() {
                 <InputPessoal />
                 <h5>Endereço da instalação</h5>
                 <InputEnderecoInstalacao />
+                <div className="save">
+                <button className='enviar'>Realizar análise</button>
+                </div>
             </div>
-
+            
         </>
     );
 }

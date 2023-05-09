@@ -12,7 +12,7 @@ export default function Carrinho() {
  const [cart, setCart] = useState([])
 
   const fetchData = () => {
-    api.get('/product').then((data) => {console.log('test',data.data)})
+    api.get('/product').then((data) => console.log(data) )
   }
 
   useEffect(() => {

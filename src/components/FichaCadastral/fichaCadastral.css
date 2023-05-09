@@ -17,9 +17,25 @@ h5 {
     position: relative;
     top: 50px;
     width: 800px;
-    height: 400px;
+    height: 480px;
     background-color: #FFF;
     margin: 0 auto;
     border-radius: 30px;
 }
 
+.save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enviar {
+    position: relative;
+    top: 50px;
+    width: 300px;
+    height: 45px;
+    font-size: 12pt;
+    color: #FFF;
+    background-color: rgb(4, 157, 106);
+    border-radius: 10px;
+}

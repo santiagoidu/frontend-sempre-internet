@@ -14,6 +14,7 @@ export default function Rotas(){
                  <Route path='/orcamento' exact element={<Orcamento />} />
                  <Route path='/carrinho' exact element={<Carrinho /> } />
             </Routes>
+            
         </BrowserRouter>
     )
 }

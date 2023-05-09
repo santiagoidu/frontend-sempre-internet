@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
 import './produtoHome.css'
+import { useNavigate } from 'react-router-dom';
 
 function ProdutoServico({produto, preco}) {
+  const router = useNavigate();
 
+// function carrinho(p) {
+//   router('/carrinho')
+// }
 
 return (
     <>
